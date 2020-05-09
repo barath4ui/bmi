@@ -116,8 +116,29 @@ h1{
 }
 .input-group input{
     margin-right: 0;
-    border-radius: 5px;
+    height: 60px;
+    font-size: 20px;
+    padding-left: 0px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    
 }
+#formDetails .input-group input{
+    font-weight: bold;
+    font-size: 30px;
+}
+.input-group input::-webkit-input-placeholder { /* Edge */
+    color:#ccc;
+  }
+  
+  .input-group input:-ms-input-placeholder { /* Internet Explorer */
+    color:#ccc;
+  }
+  
+  .input-group input::placeholder {
+    color:#ccc;
+  }
 .addtexbox{
     height: 40px;
     border-radius: 0;
