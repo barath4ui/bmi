@@ -1,66 +1,93 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,user-scalable=no">
 
-    <title>Hello, world!</title>
-    <link rel="stylesheet" href="style.css" >
-    <script src="https://kit.fontawesome.com/e003673216.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-   
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e003673216.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
   <div class="appwrap">
     <div id="todolist">
       <div id="header" class="listheader heading">
         <div class="heading-content">
-        <div id="headTitle" class="font-40">
-          <span>Welcome to</span>
-          <h1>BMI Calculator</h1>
+          <div id="headTitle" class="font-40">
+            <span>Welcome to</span>
+            <h1>BMI Calculator</h1>
+          </div>
         </div>
-        
-      </div>
         <div class="heading-bg"></div>
       </div>
-      <div id="details" class="details-wrap">
+      <div id="welcomeDetails" class="details-wrap ">
+       
         <div id="add-item" class="add-items-wrap">
-
-
           <div class="form-group">
-            
             <div class="input-group ">
-              <input type="text" id="userName" class="form-control addtexbox" placeholder="Enter your name" aria-label="name" >
+              <input type="text" id="userName" class="form-control addtexbox" placeholder="Enter your name"
+                aria-label="name">
             </div>
-            
           </div>
-          
-          
+          <br/>
           <button type="button" id="next01" class="btn btn-primary btn-lg btn-block">Next <i class="fas fa-arrow-right"></i></button>
-
-        
         </div>
-        
-        <div id="result" class="result-wrap"></div>
       </div>
 
-      
+      <div id="formDetails" class="details-wrap add-items-wrap d-none">
+         
+          <div class="form-group">
+          <label for="userHeight">Height</label>
+          <div class="input-group ">
+            <input type="number" id="userHeight" class="form-control addtexbox" placeholder="Height (CM)" aria-label="Height(CM)" >
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="userWeight">Weight</label>
+          <div class="input-group ">
+            <input type="number" id="userWeight" class="form-control addtexbox" placeholder="Weight (KG)" aria-label="Weight(KG)" >
+          </div>
+          </div>
+          <br/>
+          <button type="button" id="calculateBtn" class="btn btn-primary btn-lg btn-block">Calculate BMI</button>
+      </div>
+
+      <div id="resultDetails" class="result-wrap add-items-wrap d-none">
+          <h4>Hi <span id="usName">${userName}</span></h4>
+          <p>Your BMI Result</p>
+          <div id="result" class="result-wrap">
+            
+          </div>
+          <br/>
+          <button type="button" id="reCalculate" class="btn btn-primary btn-lg btn-block">Re calculate</button>
+      </div>
+
     </div>
   </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
-    
+  <script type="module" src="all.js"></script>
 
-    <script type="module" src="all.js"></script>
 
-  
-  </body>
+</body>
+
 </html>

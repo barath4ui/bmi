@@ -108,7 +108,7 @@ h1{
 }
 .form-control:focus{
     box-shadow: none !important;
-    border-color:#FD8300;
+    border-color:#f33590;
 }
 .input-group{
     margin-bottom: 20px;
@@ -125,7 +125,7 @@ h1{
     box-shadow: none !important;
 }
 .addtexbox:focus{
-    border-color:#FD8300;
+    border-color:#f33590;
 }
 .btn-primary{
     background-color: #f33590;
@@ -154,7 +154,7 @@ h1{
     border-radius: 0;
     border: 0;
     color: #fff;
-    background-color: #FD8300;
+    background-color: #f33590;
     outline: none !important;
     box-shadow: none !important;
 }
@@ -230,11 +230,49 @@ h1{
     opacity: 1;
 }
 .active .fa-check{
-    background-color: #FD8300;
+    background-color: #f33590;
     color: #fff;
-    border-color: #FD8300;
+    border-color: #f33590;
     font-size: 11px;
     padding-top: 10px;
+}
+
+
+.result-wrap{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-bottom: 10px solid #ccc;
+}
+.result-wrap h3{
+    color: #ccc;
+}
+
+.normal{
+    border-bottom: 10px solid green;
+}
+.normal h3{
+    color: green;
+}
+
+.under{
+    border-bottom: 10px solid yellow;
+}
+.under h3{
+    color: yellow;
+}
+
+.over{
+    border-bottom: 10px solid orange;
+}
+.over h3{
+    color: orange;
+}
+
+.Obesity{
+    border-bottom: 10px solid red;
+}
+.Obesity h3{
+    color: red;
 }
 
 
