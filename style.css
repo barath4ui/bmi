@@ -255,10 +255,10 @@ h1{
 }
 
 .under{
-    border-bottom: 10px solid yellow;
+    border-bottom: 10px solid #e09631;
 }
 .under h3{
-    color: yellow;
+    color: #e09631;
 }
 
 .over{
