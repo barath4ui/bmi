@@ -154,11 +154,13 @@ h1{
 .custom-radio .custom-control-input:checked~.custom-control-label{
     background-color:#f33590;
     color: #fff;
+   
 }
 .custom-radio .custom-control-input:checked~.custom-control-label .g-label{
 }
 .custom-control-label{
     background-color: #f0f0f0;
+    border-radius: 6px;
 }
 .fass {
     width:40px;
@@ -168,11 +170,23 @@ h1{
 .fa-females{
     background: url(images/woman.svg) top center no-repeat;
     background-size: cover;
+    opacity: 0.6;
 }
 .fa-males{
     background: url(images/man.svg) top center no-repeat;
     background-size: cover;
+    opacity: 0.6;
 }
+
+.custom-radio .custom-control-input:checked~.custom-control-label .fa-females{
+    background: url(images/active-woman.svg) top center no-repeat;
+    background-size: cover;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label .fa-males{
+    background: url(images/active-man.svg) top center no-repeat;
+    background-size: cover;
+}
+
 
 #formDetails .input-group input{
     font-weight: bold;
