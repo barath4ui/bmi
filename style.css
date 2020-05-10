@@ -331,7 +331,9 @@ h1{
 .result-wrap h3{
     color: #ccc;
 }
-
+.result-wrap h1{
+    font-size: 50px;
+}
 .normal{
     border-bottom: 10px solid green;
 }
