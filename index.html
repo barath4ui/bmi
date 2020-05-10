@@ -43,17 +43,41 @@
       </div>
 
       <div id="formDetails" class="details-wrap add-items-wrap d-none">
+         <div  id="genders" class="form-group">
+          <div class="custom-control custom-radio custom-control-inline ">
+           
+              <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked >
+            
+            <label class="custom-control-label" for="customRadioInline1">
+              <div class="gender">
+                <i class="fass fa-males"></i>
+              </div>
+              <div class="g-label">Male</div>
+            </label>
+          </div>
+          <div class="custom-control custom-radio custom-control-inline">
+           
+            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" >
+         
+            <label class="custom-control-label" for="customRadioInline2">
+              <div class="gender">
+                <i class="fass fa-females"></i>
+              </div>
+              <div class="g-label">Female</div>
+            </label>
+          </div>
+         </div>
          
           <div class="form-group">
           <label for="userHeight">Height</label>
           <div class="input-group ">
-            <input type="number" id="userHeight" class="form-control addtexbox" placeholder="Height (CM)" aria-label="Height(CM)" >
+            <input type="number" id="userHeight" class="form-control addtexbox" placeholder="176 (CM)" aria-label="Height(CM)" >
           </div>
           </div>
           <div class="form-group">
             <label for="userWeight">Weight</label>
           <div class="input-group ">
-            <input type="number" id="userWeight" class="form-control addtexbox" placeholder="Weight (KG)" aria-label="Weight(KG)" >
+            <input type="number" id="userWeight" class="form-control addtexbox" placeholder="78 (KG)" aria-label="Weight(KG)" >
           </div>
           </div>
           <br/>
@@ -64,7 +88,6 @@
           <h4>Hi <span id="usName">${userName}</span></h4>
           <p>Your BMI Result</p>
           <div id="result" class="result-wrap">
-            
           </div>
           <br/>
           <button type="button" id="reCalculate" class="btn btn-primary btn-lg btn-block">Re calculate</button>

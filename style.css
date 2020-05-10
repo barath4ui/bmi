@@ -124,6 +124,56 @@ h1{
     border-radius: 0;
     
 }
+.custom-control{
+   padding-left: 0;
+}
+.custom-control-label::before, .custom-control-label::after{
+    opacity: 0;
+}
+#genders{
+    margin-bottom: 30px;
+}
+.gender{
+    width: 130px;
+    height: 90px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 10;
+    
+}
+.g-label{
+    padding-bottom: 10px;
+}
+.custom-control{
+    cursor: pointer;
+    text-align: center;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label{
+    background-color:#f33590;
+    color: #fff;
+}
+.custom-radio .custom-control-input:checked~.custom-control-label .g-label{
+}
+.custom-control-label{
+    background-color: #f0f0f0;
+}
+.fass {
+    width:40px;
+    height:40px;
+    display: inline-block;
+}
+.fa-females{
+    background: url(images/woman.svg) top center no-repeat;
+    background-size: cover;
+}
+.fa-males{
+    background: url(images/man.svg) top center no-repeat;
+    background-size: cover;
+}
+
 #formDetails .input-group input{
     font-weight: bold;
     font-size: 30px;

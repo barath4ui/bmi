@@ -15,7 +15,18 @@
     const usName = document.getElementById("usName");
     const resultDiv = document.getElementById("result");
 
+   
 
+    var header = document.getElementById("genders");
+    var btns = header.getElementsByClassName("custom-control");
+
+    for(let i=0; i<btns.length; i++){
+      btns[i].classList.remove("active-gender");
+
+      btns[i].addEventListener("click", function(){
+        this.classList.add("active-gender");
+      });
+    }
 
     next01.addEventListener("click", showformDetails);
     calculateBtn.addEventListener("click", calculateResult);
@@ -75,6 +86,7 @@
               resultDiv.classList.add("Obesity")
             }
                   
+            
             
 
 
