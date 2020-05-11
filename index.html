@@ -19,7 +19,9 @@
 
   <div class="appwrap">
     <div id="todolist">
-      <div id="header" class="listheader heading">
+     
+      <div id="welcomeDetails" class="details-wrap ">
+        <div id="header" class="listheader heading">
         <div class="heading-content">
           <div id="headTitle" class="font-40">
             <span>Welcome to</span>
@@ -28,8 +30,6 @@
         </div>
         <div class="heading-bg"></div>
       </div>
-      <div id="welcomeDetails" class="details-wrap ">
-       
         <div id="add-item" class="add-items-wrap">
           <div class="form-group">
             <div class="input-group ">
@@ -67,6 +67,12 @@
             </label>
           </div>
          </div>
+         <div class="form-group">
+          <label for="userAge">Age</label>
+          <div class="input-group ">
+            <input type="number" id="userAge" class="form-control addtexbox" placeholder="20" aria-label="20" >
+          </div>
+          </div>
          
           <div class="form-group">
           <label for="userHeight">Height</label>
@@ -92,6 +98,35 @@
             <div id="result">
 
             </div>
+          </div>
+          <br/>
+          <div id="result-info" class="result-wrap">
+            <h4>Information</h4>
+            
+            <div class="info-wrap">
+              <div class="in-item in-blue">
+                <span>Below 18.4</span>
+              </div>
+              <div class="in-item in-green">
+                <span>18.5 to 25.0</span>
+              </div>
+              <div class="in-item in-orange">
+                <span>25.1 to 29.9</span> 
+              </div>
+              <div class="in-item in-red">
+                <span>Above 30</span>
+              </div>
+            </div>
+            
+            <div class="table-wrap">
+             <div id="info" class="table-item">
+               <h4>${resultTitle}</h4>
+               <p>${resultInfo}</p>
+             </div>
+            </div>
+
+            
+
           </div>
           <br/>
           <button type="button" id="reCalculate" class="btn btn-primary btn-lg btn-block">Re calculate</button>

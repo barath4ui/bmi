@@ -332,7 +332,7 @@ h1{
     color: #ccc;
 }
 .result-wrap h1{
-    font-size: 50px;
+    font-size: 60px;
 }
 .normal{
     border-bottom: 10px solid green;
@@ -342,10 +342,10 @@ h1{
 }
 
 .under{
-    border-bottom: 10px solid #e09631;
+    border-bottom: 10px solid blue;
 }
 .under h3{
-    color: #e09631;
+    color: blue;
 }
 
 .over{
@@ -362,6 +362,54 @@ h1{
     color: red;
 }
 
+.info-wrap{
+    height: 10px;
+    width: 100%;
+    background-color: #ccc;
+    position: relative;
+}
+.in-item{
+    width: 25%;
+    height: 10px;
+    background-color: blue;
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top:0;
+    text-align: center;
+}
+.in-item span{
+    font-size: 11px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.in-blue{
+    left: 0;
+}
+.in-green{
+left: 25%;
+background-color: green;
+}
+.in-orange{
+left: 50%;
+background-color: orange;
+}
+.in-red{
+left: 75%;
+background-color: red;
+}
+.info-wrap{
+    margin: 30px 0;
+    border-bottom: 1px solid #ccc;
+}
+.table-wrap{
+  
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+    margin-top: 60px;
+}
 
 @media (min-width: 500px) {
     .appwrap{

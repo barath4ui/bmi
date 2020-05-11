@@ -14,6 +14,7 @@
 
     const usName = document.getElementById("usName");
     const resultDiv = document.getElementById("result");
+    const info = document.getElementById("info");
 
    
 
@@ -62,27 +63,33 @@
             console.log("Result:", result);
             console.log("CaseResult",caseResult);
 
-            let weightResult ;
+            let weightResult, infoDetails;
 
            
             if (caseResult < 18.4){
               console.log( 'Underweight' );
               weightResult = 'Underweight';
+              infoDetails = `A BMI of less than 18.5 indicates that you are underweight, so you may need to put on some weight. You are recommended to ask your doctor or a dietitian for advice.`;
               resultDiv.classList.add("under")
             } 
             else if (caseResult > 18.5 && caseResult < 24.9){
               console.log( 'Normal Weight' );
               weightResult = 'Normal Weight';
+              infoDetails = `A BMI of 18.5-24.9 indicates that you are at a healthy weight for your height. By maintaining a healthy weight, you lower your risk of developing serious health problems.`;
+              
               resultDiv.classList.add("normal")
             }
             else if (caseResult > 25 && caseResult < 29.9 ){
               console.log( 'Overweight' );
               weightResult = 'Overweight';
+              infoDetails = `A BMI of 25-29.9 indicates that you are slightly overweight. You may be advised to lose some weight for health reasons. You are recommended to talk to your doctor or a dietitian for advice.`;
+              
               resultDiv.classList.add("over")
             }
             else{
               console.log( "Obesity" );
               weightResult = "Obesity";
+              infoDetails = `A BMI of over 30 indicates that you are heavily overweight. Your health may be at risk if you do not lose weight. You are recommended to talk to your doctor or a dietitian for advice.`;
               resultDiv.classList.add("Obesity")
             }
                   
@@ -94,7 +101,10 @@
             resultDiv.innerHTML = `
             <h1>${result}</h1>
             <h3>${weightResult}</h3>
-            <p>BMI weight range for the height</p>
+            `;
+            info.innerHTML = `
+            <h4>${weightResult}</h4>
+            <p>${infoDetails}</p>
             `;
         }
     }
