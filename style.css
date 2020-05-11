@@ -436,10 +436,10 @@ background-color: red;
     margin-top: 0;
 }
 
-#reCalculate{
+.reCalculate{
     margin-bottom: 30px;
 }
-#reCalculate i
+.reCalculate i
 {
     font-size: 14px;
     margin-left: 5px;
