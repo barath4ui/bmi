@@ -1,0 +1,356 @@
+a!localVariables(
+  local!activeStep: 3,
+  /*local!a: 1,*/
+  a!headerContentLayout(
+    header: a!cardLayout(
+      contents: {
+        a!columnsLayout(
+          columns: {
+            a!columnLayout(contents: {}, width: "EXTRA_NARROW"),
+            a!columnLayout(
+              contents: {
+                a!columnsLayout(
+                  columns: {
+                    a!columnLayout(contents: {}),
+                    a!columnLayout(contents: {}),
+                    a!columnLayout(contents: {})
+                  },
+                  marginBelow: "EVEN_MORE"
+                ),
+                a!richTextDisplayField(
+                  labelPosition: "COLLAPSED",
+                  value: {
+                    a!richTextIcon(
+                      icon: "angle-left"
+                    ),
+                    "Back to home"
+                  }
+                ),
+                a!cardLayout(
+                  contents: {
+                    a!sideBySideLayout(
+                      items: {
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: "COLLAPSED",
+                            helpTooltip: "",
+                            value: {
+                              a!richTextItem(
+                                text: {
+                                  "Send Your Query"
+                                },
+                                size: "MEDIUM_PLUS",
+                                style: {
+                                  "STRONG"
+                                }
+                              )
+                            }
+                          )
+                        ),
+                        a!sideBySideItem(
+                          item: a!richTextDisplayField(
+                            labelPosition: "COLLAPSED",
+                            value: {
+                              a!richTextItem(
+                                text: {
+                                  a!richTextIcon(
+                                    icon: "ellipsis-h"
+                                  )
+                                },
+                                size: "MEDIUM_PLUS",
+                                style: {
+                                  "STRONG"
+                                }
+                              )
+                            },
+                            align: "RIGHT"
+                          )
+                        )
+                      }
+                    ),
+                    a!columnsLayout(
+                      columns: {
+                        a!columnLayout(
+                          contents: {
+                            a!cardLayout(
+                              contents: {},
+                              height: "AUTO",
+                              style: "#ffffff",
+                              padding: "NONE",
+                              showBorder: false,
+                              decorativeBarPosition: "NONE",
+                              decorativeBarColor: "#d9d9d9"
+                            )
+                          },
+                          width: "NARROW"
+                        ),
+                        a!columnLayout(
+                          contents: {
+                            a!sectionLayout(
+                              contents: {
+                                a!richTextDisplayField(
+                                  labelPosition: "COLLAPSED",
+                                  value: {
+                                    a!richTextItem(
+                                      text: {
+                                        "Specific needs"
+                                      },
+                                      size: "MEDIUM",
+                                      style: {
+                                        "STRONG"
+                                      }
+                                    )
+                                  }
+                                )
+                              }
+                            )
+                          },
+                          width: "WIDE"
+                        )
+                      },
+                      marginAbove: "MORE",
+                      showDividers: false
+                    ),
+                    a!columnsLayout(
+                      columns: {
+                        a!columnLayout(
+                          contents: {
+                            a!cardLayout(
+                              contents: {
+                                a!forEach(
+                                  items: {
+                                    "About You",
+                                    "Query Category",
+                                    "Query Details",
+                                    "Specific Needs"
+                                  },
+                                  expression: {
+                                    a!sectionLayout(
+                                      contents: {
+                                        a!sideBySideLayout(
+                                          items: {
+                                            a!sideBySideItem(
+                                              item: a!richTextDisplayField(
+                                                labelPosition: "COLLAPSED",
+                                                value: a!richTextIcon(
+                                                  icon: if(fv!index = local!activeStep, "circle",
+                                                  if(fv!index < local!activeStep, "check-circle",
+                                                  "circle-o-large")
+                                                  ),
+                                                  color: if(fv!index <= local!activeStep, "#da0011", "SECONDARY"),
+                                                  size: "MEDIUM"
+                                                )
+                                              )
+                                            ),
+                                            a!sideBySideItem(
+                                              item: a!richTextDisplayField(
+                                                labelPosition: "COLLAPSED",
+                                                value: a!richTextItem(
+                                                  text: fv!item,
+                                                  size: "MEDIUM",
+                                                  style: if(fv!index = local!activeStep, "STRONG", "PLAIN")
+                                                )
+                                              ),
+                                              width: "10X"
+                                            )
+                                          }
+                                        )
+                                      }
+                                    )
+                                  }
+                                )
+                              },
+                              height: "AUTO",
+                              style: "#ffffff",
+                              padding: "NONE",
+                              showBorder: false,
+                              decorativeBarPosition: "NONE",
+                              decorativeBarColor: "#d9d9d9"
+                            )
+                          },
+                          width: "NARROW"
+                        ),
+                        a!columnLayout(
+                          contents: {
+                            a!sectionLayout(
+                              contents: {
+                                a!columnsLayout(
+                                  columns: {
+
+                                    a!columnLayout(
+                                      contents: {
+                                        a!columnsLayout(
+                                          columns: {
+                                            a!columnLayout(
+                                              contents: {
+                                                a!richTextDisplayField(
+                                                  labelPosition: "COLLAPSED",
+                                                  value: {
+                                                    a!richTextIcon(
+                                                      icon: "check-square",
+                                                      size: "MEDIUM"
+                                                    ),
+                                                    " I want to keep another colleague informed about this query"
+                                                  }
+                                                ),
+                                                a!textField(
+                                                  label: "Give a title to your query",
+                                                  labelPosition: "COLLAPSED",
+                                                  helpTooltip: "",
+                                                  placeholder: "Start Typing Email Id or Name",
+                                                  saveInto: {},
+                                                  refreshAfter: "UNFOCUS",
+                                                  validations: {}
+                                                )
+                                              }
+                                            )
+                                          }
+                                        ),
+                                        a!richTextDisplayField(
+                                          labelPosition: "COLLAPSED",
+                                          value: {
+                                            a!richTextIcon(
+                                              icon: "check-square",
+                                              size: "MEDIUM"
+                                            ),
+                                            " I would like to send this query to a specific person in compliance team"
+                                          }
+                                        ),
+                                        a!textField(
+                                          label: "Give a title to your query",
+                                          labelPosition: "COLLAPSED",
+                                          placeholder: "Start Typing Email Id or Name",
+                                          saveInto: {},
+                                          refreshAfter: "UNFOCUS",
+                                          validations: {}
+                                        ),
+                                        a!radioButtonField(
+                                          label: "Information Security",
+                                          labelPosition: "ABOVE",
+                                          choiceLabels: {"Highly restricted", "Restricted", "Internal", "Public"},
+                                          choiceValues: {1, 2, 3, 4},
+                                          saveInto: {},
+                                          choiceLayout: "COMPACT",
+                                          validations: {}
+                                        )
+                                      }
+                                    )
+                                  },
+                                  spacing: "STANDARD",
+                                  showDividers: true
+                                )
+                              }
+                            )
+                          },
+                          width: "WIDE"
+                        )
+                      },
+                      showDividers: true
+                    ),
+                    a!columnsLayout(
+                      columns: {
+                        a!columnLayout(
+                          contents: {
+                            a!cardLayout(
+                              contents: {},
+                              height: "AUTO",
+                              style: "#ffffff",
+                              padding: "NONE",
+                              showBorder: false,
+                              decorativeBarPosition: "NONE",
+                              decorativeBarColor: "#d9d9d9"
+                            )
+                          },
+                          width: "NARROW"
+                        ),
+                        a!columnLayout(
+                          contents: {
+                            a!sectionLayout(
+                              contents: {
+                                a!columnsLayout(
+                                  columns: {
+                                    a!columnLayout(
+                                      contents: {
+                                        a!buttonArrayLayout(
+                                          buttons: {
+                                            a!buttonWidget(
+                                              label: "Back",
+                                              icon: "angle-left",
+                                              size: "LARGE",
+                                              style: "NORMAL"
+                                            )
+                                          },
+                                          align: "START"
+                                        )
+                                      },
+                                      width: "EXTRA_NARROW"
+                                    ),
+                                    a!columnLayout(
+                                      contents: {
+                                        a!sideBySideLayout(
+                                          items: {
+                                            a!sideBySideItem(
+                                              item: a!buttonArrayLayout(
+                                                buttons: {
+                                                  a!buttonWidget(
+                                                    label: "Save Draft",
+                                                    size: "LARGE",
+                                                    style: "NORMAL"
+                                                  )
+                                                  
+                                                },
+                                                align: "END"
+                                              )
+                                            ),
+                                            a!sideBySideItem(
+                                                 item: a!recordActionField(
+                                                 actions: a!recordActionItem(
+                                                  action: 'recordType!{9fbf7bdf-c73d-42c7-af20-ec46a33accad}T390_askCompliance_popUp.actions.{b5f1e68b-2f5c-46e1-838a-5e0d81347c80}previewYourQuery'
+                                                 ),
+                                                   style: "CALL_TO_ACTION",
+                                                   display: "LABEL",
+                                                   align: "END"
+                                                 ),
+                                              width: "MINIMIZE"
+                                            )
+                                          }
+                                        )
+                                      }
+                                    )
+                                  },
+                                  marginAbove: "STANDARD"
+                                )
+                              }
+                            )
+                          },
+                          width: "WIDE"
+                        )
+                      },
+                      showDividers: false
+                    )
+                  },
+                  height: "AUTO",
+                  style: "NONE",
+                  shape: "SEMI_ROUNDED",
+                  padding: "EVEN_MORE",
+                  marginBelow: "STANDARD"
+                ),
+                a!columnsLayout(
+                  columns: {
+                    a!columnLayout(contents: {})
+                  },
+                  marginAbove: "EVEN_MORE"
+                )
+              }
+            ),
+            a!columnLayout(contents: {}, width: "EXTRA_NARROW")
+          }
+        )
+      },
+      height: "AUTO",
+      style: "#E3E3E3",
+      padding: "MORE",
+      marginBelow: "STANDARD"
+    )
+  )
+)
