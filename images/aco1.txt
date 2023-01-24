@@ -1,0 +1,689 @@
+{
+  a!cardLayout(
+    contents: {
+      a!sideBySideLayout(
+        items: {
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#ffffff",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#00ff00",
+                  size: "MEDIUM"
+                ),
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "ACCENT",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#ffffff",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#ffffff",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#ffffff",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          )
+        },
+        spacing: "NONE",
+        marginBelow: "NONE"
+      ),
+      a!sideBySideLayout(
+        items: {
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#0000ff",
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#999999",
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#999999",
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#999999",
+              style: "THIN",
+              showPercentage: false
+            )
+          )
+        },
+        alignVertical: "MIDDLE",
+        spacing: "NONE"
+      ),
+      a!sideBySideLayout(
+        items: {
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Unassigned"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Assessment"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Response Provided"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Closure Requested"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Closed"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          )
+        }
+      )
+    },
+    height: "AUTO",
+    style: "NONE",
+    marginBelow: "STANDARD"
+  ),
+  a!cardLayout(
+    contents: {
+      a!sideBySideLayout(
+        items: {
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "ACCENT",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#00ff00",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#ffffff",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#ffffff",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#ffffff",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          )
+        },
+        spacing: "NONE",
+        marginBelow: "NONE"
+      ),
+      a!sideBySideLayout(
+        items: {
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#00ff00",
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#999999",
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#999999",
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#999999",
+              style: "THIN",
+              showPercentage: false
+            )
+          )
+        },
+        alignVertical: "MIDDLE",
+        spacing: "NONE"
+      ),
+      a!sideBySideLayout(
+        items: {
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Unassigned"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Assessment"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Response Provided"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Closure Requested"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Closed"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          )
+        }
+      )
+    },
+    height: "AUTO",
+    style: "NONE",
+    marginBelow: "STANDARD"
+  ),
+  a!cardLayout(
+    contents: {
+      a!sideBySideLayout(
+        items: {
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "ACCENT",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#00ff00",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#ffffff",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#ffffff",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextIcon(
+                  icon: "map-marker-solid",
+                  color: "#ffffff",
+                  size: "MEDIUM"
+                )
+              },
+              align: "RIGHT",
+              marginAbove: "NONE",
+              marginBelow: "NONE"
+            )
+          )
+        },
+        spacing: "NONE",
+        marginBelow: "NONE"
+      ),
+      a!sideBySideLayout(
+        items: {
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              color: "#bbb",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#bbb",
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#bbb",
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#bbb",
+              style: "THIN",
+              showPercentage: false
+            )
+          ),
+          a!sideBySideItem(
+            item: a!progressBarField(
+              label: "",
+              labelPosition: "COLLAPSED",
+              percentage: 100,
+              color: "#bbb",
+              style: "THIN",
+              showPercentage: false
+            )
+          )
+        },
+        alignVertical: "MIDDLE",
+        spacing: "NONE"
+      ),
+      a!sideBySideLayout(
+        items: {
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Unassigned"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Assessment"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Response Provided"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Closure Requested"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          ),
+          a!sideBySideItem(
+            item: a!richTextDisplayField(
+              labelPosition: "COLLAPSED",
+              value: {
+                a!richTextItem(
+                  text: {
+                    "Closed"
+                  },
+                  style: {
+                    "STRONG"
+                  }
+                )
+              },
+              align: "RIGHT"
+            )
+          )
+        }
+      )
+    },
+    height: "AUTO",
+    style: "NONE",
+    marginBelow: "STANDARD"
+  ),
+  }

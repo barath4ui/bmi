@@ -1,0 +1,147 @@
+a!cardLayout(
+  contents: {
+    a!sideBySideLayout(
+      items: {
+        a!sideBySideItem(
+          item: a!progressBarField(
+            label: "Progress Bar",
+            labelPosition: "COLLAPSED",
+            percentage: 100,
+            style: "THIN",
+            showPercentage: false(),
+            color: "ACCENT",
+            /*instructions: "step 1"*/
+            
+          )
+        ),
+        a!sideBySideItem(
+          /*item: a!richTextDisplayField(*/
+            /*labelPosition: "COLLAPSED",*/
+            /*value: a!richTextIcon(icon: "trash")*/
+          /*),*/
+          item: a!imageField(
+            labelPosition: "COLLAPSED",
+            images: a!webImage(
+              source: "https://images.unsplash.com/photo-1629956044156-27896de7efa1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+              caption: "one"
+            ),
+            style: "AVATAR",
+            size: "ICON"
+          ),
+          width: "MINIMIZE"
+        ),
+        a!sideBySideItem(
+          item: a!progressBarField(
+            label: "Progress Bar",
+            labelPosition: "COLLAPSED",
+            percentage: 100,
+            style: "THIN",
+            showPercentage: false,
+            color: "POSITIVE",
+            /*instructions: "step 2"*/
+          )
+        ),
+        a!sideBySideItem(
+          /*item: a!richTextDisplayField(*/
+          /*labelPosition: "COLLAPSED",*/
+          /*value: a!richTextIcon(icon: "trash")*/
+          /*),*/
+          item: a!imageField(
+            labelPosition: "COLLAPSED",
+            images: a!webImage(
+              source: "https://images.unsplash.com/photo-1567254790685-6b6d6abe4689?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+              caption: "two"
+            ),
+            style: "AVATAR",
+            size: "ICON"
+          ),
+          width: "MINIMIZE"
+        ),
+        a!sideBySideItem(
+          item: a!progressBarField(
+            label: "Progress Bar",
+            labelPosition: "COLLAPSED",
+            percentage: 100,
+            style: "THIN",
+            showPercentage: false,
+            color: "#AAA",
+            /*instructions: "step 3"*/
+          )
+        ),
+        a!sideBySideItem(
+          /*item: a!richTextDisplayField(*/
+          /*labelPosition: "COLLAPSED",*/
+          /*value: a!richTextIcon(icon: "trash")*/
+          /*),*/
+          item: a!imageField(
+            labelPosition: "COLLAPSED",
+            images: a!webImage(
+              source: "https://images.unsplash.com/photo-1560362883-654430ce3bee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
+              caption: "three"
+            ),
+            style: "AVATAR",
+            size: "ICON"
+          ),
+          width: "MINIMIZE"
+        ),
+        a!sideBySideItem(
+          item: a!progressBarField(
+            label: "Progress Bar",
+            labelPosition: "COLLAPSED",
+            percentage: 100,
+            style: "THIN",
+            showPercentage: false,
+            color: "#AAA",
+            /*instructions: "step 4"*/
+          )
+        ),
+        a!sideBySideItem(
+          /*item: a!richTextDisplayField(*/
+          /*labelPosition: "COLLAPSED",*/
+          /*value: a!richTextIcon(icon: "trash")*/
+          /*),*/
+          item: a!imageField(
+            labelPosition: "COLLAPSED",
+            images: a!webImage(
+              source: "https://images.unsplash.com/photo-1620645514399-2cd0fe1de8ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
+              caption: "four"
+            ),
+            style: "AVATAR",
+            size: "ICON"
+          ),
+          width: "MINIMIZE"
+        ),
+        a!sideBySideItem(
+          item: a!progressBarField(
+            label: "Progress Bar",
+            labelPosition: "COLLAPSED",
+            percentage: 100,
+            style: "THIN",
+            showPercentage: false,
+            color: "#AAA",
+            /*instructions: "step 5"*/
+          )
+        ),
+        a!sideBySideItem(
+          /*item: a!richTextDisplayField(*/
+          /*labelPosition: "COLLAPSED",*/
+          /*value: a!richTextIcon(icon: "trash")*/
+          /*),*/
+          item: a!imageField(
+            labelPosition: "COLLAPSED",
+            images: a!webImage(
+              source: "https://images.unsplash.com/photo-1484173936665-9ae90b911638?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80",
+              caption: "five"
+            ),
+            style: "AVATAR",
+            size: "ICON"
+          ),
+          width: "MINIMIZE"
+        )
+      },
+      alignVertical: "MIDDLE",
+      spacing: "NONE"
+    )
+  },
+  style: "#f0f0f0"
+)

@@ -1,0 +1,221 @@
+{
+  a!cardLayout(
+    contents: {
+      a!columnsLayout(
+        columns: {
+          a!columnLayout(
+            contents: {
+              a!cardLayout(
+                showBorder: false(),
+                padding: "EVEN_LESS",
+                style: "ACCENT"
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!cardLayout(
+                padding: "EVEN_LESS",
+                showBorder: false(),
+                style: "ACCENT"
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!cardLayout(
+                showBorder: false(),
+                padding: "EVEN_LESS",
+                style: "ACCENT",
+                contents: {}
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!cardLayout(
+                padding: "EVEN_LESS",
+                style: "ACCENT",
+                showBorder: false(),
+                contents: {}
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!cardLayout(
+                padding: "EVEN_LESS",
+                style: "#eee",
+                showBorder: false(),
+                contents: {}
+              )
+            }
+          )
+        },
+        marginBelow: "NONE",
+        spacing: "NONE"
+      ),
+      a!columnsLayout(
+        columns: {
+          a!columnLayout(
+            contents: {
+              a!cardLayout(
+                contents: {},
+                padding: "EVEN_LESS",
+                showBorder: false(),
+                style: "#020A51"
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!cardLayout(
+                showBorder: false(),
+                style: "#020A51",
+                padding: "EVEN_LESS",
+                contents: {}
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!cardLayout(
+                padding: "EVEN_LESS",
+                showBorder: false(),
+                style: "#eee",
+                contents: {}
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!cardLayout(
+                showBorder: false(),
+                contents: {},
+                padding: "EVEN_LESS",
+                style: "#eee",
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!cardLayout(
+                padding: "EVEN_LESS",
+                showBorder: false(),
+                style: "#eee",
+                contents: {}
+              )
+            }
+          )
+        },
+        marginBelow: "NONE",
+        spacing: "NONE"
+      ),
+      a!columnsLayout(
+        columns: {
+          a!columnLayout(
+            contents: {
+              a!richTextDisplayField(
+                labelPosition: "COLLAPSED",
+                value: {
+                  a!richTextItem(
+                    text: {
+                      "Stage 1"
+                    },
+                    color: "STANDARD",
+                    style: {
+                      "STRONG"
+                    }
+                  )
+                },
+                align: "CENTER"
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!richTextDisplayField(
+                labelPosition: "COLLAPSED",
+                value: {
+                  a!richTextItem(
+                    text: {
+                      "Stage 2"
+                    },
+                    color: "STANDARD",
+                    style: {
+                      "STRONG"
+                    }
+                  )
+                },
+                align: "CENTER"
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!richTextDisplayField(
+                labelPosition: "COLLAPSED",
+                value: {
+                  a!richTextItem(
+                    text: {
+                      "Stage 3"
+                    },
+                    color: "STANDARD",
+                    style: {
+                      "STRONG"
+                    }
+                  )
+                },
+                align: "CENTER"
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!richTextDisplayField(
+                labelPosition: "COLLAPSED",
+                value: {
+                  a!richTextItem(
+                    text: {
+                      "Stage 4"
+                    },
+                    color: "STANDARD",
+                    style: {
+                      "STRONG"
+                    }
+                  )
+                },
+                align: "CENTER"
+              )
+            }
+          ),
+          a!columnLayout(
+            contents: {
+              a!richTextDisplayField(
+                labelPosition: "COLLAPSED",
+                value: {
+                  a!richTextItem(
+                    text: {
+                      "Stage 5"
+                    },
+                    color: "STANDARD",
+                    style: {
+                      "STRONG"
+                    }
+                  )
+                },
+                align: "CENTER"
+              )
+            }
+          )
+        },
+        marginAbove:  "LESS",
+        spacing: "NONE"
+      )
+    },
+    showBorder: false(),
+    height: "AUTO",
+    padding: "NONE",
+    marginBelow: "STANDARD"
+  )
+}
